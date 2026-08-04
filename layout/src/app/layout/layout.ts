@@ -18,6 +18,20 @@ export class Layout {
   sigla_uf: string = '';
   sigla_municipio: string = '';
 
+
+ 
+  addItem(): void {
+    console.log('Cliente cadastrado:', {
+      nome: this.nome_pessoa,
+      email: this.email_pessoa,
+      cpf: this.numero_cpf,
+      dataNascimento: this.data_nascimento,
+      cep: this.numero_cep,
+      municipio: this.municipio,
+      uf: this.sigla_uf
+  
+    });
+  }
   LimparItem(): void {
     this.nome_pessoa = '';
     this.email_pessoa = '';
