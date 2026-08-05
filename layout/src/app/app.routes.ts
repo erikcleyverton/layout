@@ -1,3 +1,19 @@
 import { Routes } from '@angular/router';
+import { Formulario } from './formulario/formulario';
+import { HomeComponent } from './home-component/home-component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '', 
+    redirectTo: 'home', 
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'Cadastro',
+    component: Formulario
+  }
+];
