@@ -5,8 +5,11 @@ import { Pessoa } from '../models/pessoa';
   providedIn: 'root',
 })
 export class PessoaService {
-
   private pessoas: Pessoa[] = [];
+
+  tamanhoArray(): number {
+    return this.pessoas.length;
+  }
 
   adicionar(pessoa: Pessoa): void {
     this.pessoas.push(pessoa);

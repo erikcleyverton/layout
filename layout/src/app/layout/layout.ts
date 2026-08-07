@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-layout',
-  imports: [FormsModule], 
+  imports: [FormsModule,],
   templateUrl: './layout.html',
   styleUrl: './layout.css',
 })
